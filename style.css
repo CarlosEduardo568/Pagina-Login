@@ -1,0 +1,14 @@
+body {
+    background: url(./assets/mobile-dark-background.png);
+}
+
+main {
+    color: #C5C5C5;
+}
+
+
+@media (min-width: 758px){
+    main {
+    background: #282828;
+}
+}
