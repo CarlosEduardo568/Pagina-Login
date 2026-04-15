@@ -3,7 +3,6 @@ body {
 }
 
 main {
-    color: #C5C5C5;
     height: 100vh;
 
     display: flex;
@@ -16,6 +15,7 @@ input {
     background: transparent;
     border: 1px solid #ADADAD;
     border-radius: 5px;
+    color: aliceblue;
 
     padding: 10px;
     width: 90%;
@@ -30,15 +30,46 @@ label {
     margin-bottom: 5px;
 }
 
+.checbox-forgettenpassword {
+    color: orange;
+}
+
 .input-container {
+    font-size: 19px;
     width: 100%;
     color: #ADADAD;
 }
+
+/* Configuração da Nav bar*/
+header {
+    color: #C5C5C5;
+    border: 1px solid transparent;
+}
+
 /*---------------------------------------------*/
 
 /* TELA PARA PC*/
 @media (min-width: 758px){
     main {
-    background: #282828;
-}
+    flex-direction: row;
+    align-items: stretch;
+    }
+
+    #imagem-background {
+        background: url(./assets/side-image.jpg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        display: block;
+        flex:1
+        
+    }
+
+    .login-form {
+        display: flex;
+        padding: 50px;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
