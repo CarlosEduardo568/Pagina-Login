@@ -7,11 +7,16 @@
     <title>Login</title>
 </head>
 <body>
-    <header>Aveck</header>
     <main>
         <div class="login-form">
-            <h2>Faça seu login</h2>
-            <p>Entre com suas informações de cadastro</p>
+            <header>persona</header>
+
+            <div class="div-cabeçalho">
+            <h2 class="div-cabeçalho titulo">Faça seu login</h2>
+            <p class="div-cabeçalho texto">Entre com suas informações de cadastro</p>
+            </div>
+
+            <br>
             
             <!-- Campos de digitação-->
             <!-- email-->
@@ -30,14 +35,28 @@
 
             <!--checbox e equeci minha senha -->
             <div class="checbox-forgettenpassword">
-                <button></button>
-                <a>Esqueci minha senha</a>
+                <div id="div-checkbox">
+                    <input type="checkbox" id="checkbox-mostrar-senha">
+                    <label for="checkbox-mostrar-senha">Mostrar Senha</label>
+                </div>
+
+                <div id="forgettenpassword">
+                    <a>Esqueci minha senha</a>
+                </div>
             </div>
+
+            <br>
+
+            <!-- Botão Login  -->
+             <div class="container-bnt-login">
+                <button class="bnt-login">Entrar</button>
+             </div>
 
         </div>
 
-        <div id="imagem-background"></div>
+        <div id="side-image"></div>
 
     </main>
+
 </body>
 </html>
