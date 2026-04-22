@@ -1,5 +1,7 @@
 body {
-    background: url(./assets/mobile-dark-background.png);
+    background: url(./assets/persona3\ \(1\).jpeg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -7,15 +9,18 @@ main {
     border-top-right-radius: 8px;
 }
 
-#forgettenpassword :hover{
-    color: aqua;
-}
 
 .login-form{
-     padding: 40px;
-     width: 90%;
+     width: 80%;
      padding-top: 8px;
      border-radius: 10px;
+     
+
+     margin: auto;
+     margin-top: 5vh;
+     padding: 30px;
+
+     background: rgba(0, 0, 0, 0.7);
 }
 
 /* Configuração dos inputs e outros campos*/
@@ -36,6 +41,10 @@ input {
 
 }
 
+.input-container img{
+    margin-right: 5px;
+}
+
 input::placeholder{
     color: #969696;
     opacity:0.7;
@@ -48,24 +57,70 @@ label {
 
 /*Chexbox(mostrar senha) e Esqueci minha senha*/
 .checbox-forgettenpassword {
-    color: orange;
+    color: rgb(255, 170, 0);
     display: flex;
     width: 95%;
+    margin-top: 10px;
+    font-size: 17px;
+
 
 }
 .checbox-forgettenpassword input{
     height: 5vh;
     width: 50%;
 }
-/*esqueci senha*/
+/*----------esqueci senha-------*/
 #forgettenpassword {
     display: flex;
+    text-decoration:underline;
+    cursor: pointer;
 
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+#forgettenpassword :hover{
+    color: blue;
+    text-decoration:underline;
+}
+
+/*-------Mostrar senha----------*/
+/*Ações*/
+#div-checkbox :hover{
+    transition: 0.2s ease;
+    transform: scale(1.07);
+}
+#div-checkbox label :active{
+    transform: scale(0.99);
+}
+/*-----*/
+#div-checkbox label{
+    cursor: pointer;
+}
+#div-checkbox input {
+   display: none;
+}
+/*Desmarcado*/
+#div-checkbox .icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+    background: url('./assets/eye-off.svg') no-repeat center center;
+    background-size: contain;
+    margin-right: 8px;
+    cursor: pointer;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/*Marcado*/
+#div-checkbox input:checked + label .icon{
+    background: url(./assets/eye.svg) no-repeat center center;
+    display: inline-block;
+}
 /*-----------------------------------------------------
 
 
@@ -91,7 +146,7 @@ header {
     color: #FFF6CF;
 }
 
-/* Botão Login*/
+/*---------- Botão Login --------*/
 .bnt-login {
     width: 100%;
     height: 9vh;
@@ -107,7 +162,6 @@ header {
 
 .container-bnt-login{
     width: 95%;
-    margin-top: 8px;
     transition: all 0.5s;
 }
 
@@ -120,6 +174,15 @@ header {
     transition: 0.1s ease;
     transform: scale(0.9);
 }
+/*---------- registre-se --------*/
+.div-registre-se {
+    color: white;
+    
+}
+.div-registre-se a{
+   color: rgb(255, 170, 0);
+}
+
 /*---------------------------------------------*/
 
 /* TELA PARA PC*/
@@ -142,5 +205,14 @@ header {
         border-radius: 5px;
     }    
 
+    body {
+        background: url(./assets/mobile-dark-background.png) no-repeat center center;
+        background-size: cover;
+       
+    }
 
+    .login-form {
+        background: none;
+        margin-top: 0px;
+    }
 }
