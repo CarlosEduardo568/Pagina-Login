@@ -1,0 +1,25 @@
+body {
+    background: url(./assets/persona3\ \(1\).png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*---------------------- Tela para PC -------------------------*/
+@media (min-width: 758px){
+    #side-image{
+       background: url('./assets/persona3\ \(1\).png') no-repeat center center;
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        height: 100vh;
+        width: 100%; /* No grid ele ocupa 100% da coluna dele */  
+
+        border-radius: 5px;
+    } 
+    
+    body{
+        background: url(./assets/mobile-dark-background.png) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+}

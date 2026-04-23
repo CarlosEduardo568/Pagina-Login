@@ -1,18 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registrar-se.css">
     <title>Login</title>
 </head>
 <body>
     <main>
         <div class="login-form">
-            <header>Persona</header>
+            <header>
+                <p>Persona</p>
+            </header>
 
              <h2 class="div-cabeçalho titulo"><img src="./assets/log-in.svg">Registrar-se</h2>
             <p class="div-cabeçalho texto">Crie uma conta com suas inrmações para acessar o site</p>
+
+
+            <div class="input-container">
+                <label for="text" class="inputs"><img src="./assets/user.svg" alt="">Nome</label>
+                <input type="text" class="inputs" placeholder="Digite on seu nome">
+            </div>
+
+            <br>
+
+            <!--  Registrar celular -->
+            <div class="input-container">
+                <label for="tel" class="inputs"><img src="./assets/phone.svg" alt="">Celular</label>
+                <input type="tel" class="inputs" placeholder="(99) 99999-9999"  onkeyup="this.value = this.value.replace(/[^0-9-]/g, '');">
+            </div>
+
+            <br>
+
+            <div class="input-container">
+                <label for="email" class="inputs"><img src="./assets/mail.svg" alt="">E-mail</label>
+                <input type="email" class="inputs" placeholder="Digite seu email">
+            </div>
+
+            <br>
+
+            <div class="input-container">
+                <label for="password" class="inputs"><img src="./assets/lock.svg" alt="">Criar senha</label>
+                <input type="password" class="inputs" placeholder="Digite uma senha forte">
+            </div>
+
+            <br>
+
+            <!-- Botão Login  -->
+            <div class="container-bnt-login">
+                <form action="index.html">
+                <button class="bnt-login" href="index.html">
+                    <form action="index.html"></form>
+                    Criar
+                </button>
+            </form>
+            </div>
+
+
              </div>
 
              

@@ -19,6 +19,7 @@ main {
      margin: auto;
      margin-top: 5vh;
      padding: 30px;
+     max-height: 100vh;
 
      background: rgba(0, 0, 0, 0.7);
 }
@@ -130,8 +131,6 @@ header {
     font-size: 18px;
 }
 
-
-
 .texto {
     color: #ADADAD;
     margin-top: 0px;
@@ -142,6 +141,9 @@ header {
     color: #FFF6CF;
 }
 
+.titulo img{
+    margin-right: 5px;
+}
 /*---------- Botão Login --------*/
 .bnt-login {
     width: 100%;
