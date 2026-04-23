@@ -72,7 +72,6 @@ label {
 /*----------esqueci senha-------*/
 #forgettenpassword {
     display: flex;
-    text-decoration:underline;
     cursor: pointer;
 
     margin-left: auto;
@@ -81,17 +80,16 @@ label {
 }
 
 #forgettenpassword :hover{
-    color: blue;
     text-decoration:underline;
 }
 
 /*-------Mostrar senha----------*/
 /*Ações*/
-#div-checkbox :hover{
+#div-checkbox label:hover{
     transition: 0.2s ease;
     transform: scale(1.07);
 }
-#div-checkbox label :active{
+#div-checkbox label:active{
     transform: scale(0.99);
 }
 /*-----*/
@@ -132,9 +130,7 @@ header {
     font-size: 18px;
 }
 
-.div-cabeçalho {
-    color: #C5C5C5;
-}
+
 
 .texto {
     color: #ADADAD;
@@ -165,22 +161,29 @@ header {
     transition: all 0.5s;
 }
 
-.container-bnt-login :hover {
+.container-bnt-login button:hover {
     transform: scale(1.1);
     border: 2px;
     border: 1px solid rgba(9, 9, 121, 1);
 }
-.container-bnt-login :active{
+.container-bnt-login button:active{
     transition: 0.1s ease;
     transform: scale(0.9);
 }
 /*---------- registre-se --------*/
 .div-registre-se {
     color: white;
-    
+    margin-top: 8px;
+    text-align: center;
 }
 .div-registre-se a{
    color: rgb(255, 170, 0);
+   cursor: pointer;
+   text-decoration: none;
+}
+.div-registre-se a:hover{
+    text-decoration: underline 2px;
+    padding: 0;
 }
 
 /*---------------------------------------------*/
