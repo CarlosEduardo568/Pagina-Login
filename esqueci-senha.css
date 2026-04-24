@@ -1,0 +1,54 @@
+body {
+    background: url(./assets/persona3\ \(2\).jpeg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+main {
+    width: 90%;
+    background-image: url(./assets/mobile-dark-background.png);
+    height: 100vh;
+    margin: auto auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+header h2 {
+    color: #FFF6CF;
+    margin: 0px;
+    padding: 10px;
+    font-weight: normal;
+    background: black;
+
+    border-bottom: 1px solid white;
+}
+/*--------------------------------------*/
+.recoverypassword-form {
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+/*--------------------------------------*/
+.div-recoverypassword {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-recoverypassword input {
+    width: 100%;
+}
+.div-recoverypassword label {
+    margin: 8px auto;
+}
+
+/*------- Tela para PC --------*/
+@media (min-width: 758px) {
+    .container{
+        width: 70%;
+    }
+}

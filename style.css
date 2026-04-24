@@ -9,6 +9,12 @@ main {
     border-top-right-radius: 8px;
 }
 
+a {
+    color: rgb(255, 170, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 .login-form{
      width: 80%;
@@ -128,7 +134,7 @@ header {
     color: #C5C5C5;
     border: 1px solid transparent;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .texto {
@@ -146,30 +152,40 @@ header {
 }
 /*---------- Botão Login --------*/
 .bnt-login {
-    width: 100%;
+    width: 90%;
     height: 9vh;
+    cursor: pointer;
 
-    background: #008eab;
-    background: radial-gradient(circle, rgba(0, 142, 171, 1) 0%, rgba(9, 9, 121, 1) 86%, rgba(2, 0, 36, 1) 100%);
-    border: transparent;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #008eab 0%, #090979 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil para dar profundidade */
+    border-radius: 8px;
 
-    font-size: 20px;
+
+   /* Tipografia */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF6CF;
+     /* Deixa com cara de botão de menu de jogo */
+    letter-spacing: 2px;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 
 .container-bnt-login{
     width: 95%;
-    transition: all 0.5s;
+    margin: auto auto;
 }
 
 .container-bnt-login button:hover {
-    transform: scale(1.1);
-    border: 2px;
-    border: 1px solid rgba(9, 9, 121, 1);
+    background: #0042a6;
+    box-shadow: 0 0 20px rgba(0, 100, 120, 0.6);
+
+    transform: translateY(-2px) scale(1.03);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 .container-bnt-login button:active{
-    transition: 0.1s ease;
     transform: scale(0.9);
 }
 /*---------- registre-se --------*/
@@ -178,11 +194,7 @@ header {
     margin-top: 8px;
     text-align: center;
 }
-.div-registre-se a{
-   color: rgb(255, 170, 0);
-   cursor: pointer;
-   text-decoration: none;
-}
+
 .div-registre-se a:hover{
     text-decoration: underline 2px;
     padding: 0;
